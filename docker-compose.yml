@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  biometric_backend:
+    build: .
+    container_name: biometric_backend
+    restart: always
+    ports:
+      - 3050:3050
+    networks:
+      - internal_network_dev
+
+networks:
+  internal_network_dev:
+    external: true
