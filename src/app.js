@@ -167,7 +167,7 @@ app.get('/', (req, res) => {
 });
 
 const PORT = process.env.PORT || 3500;
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server berjalan di port ${PORT}`);
     console.log('\nDummy users:');
     console.log('1. Email: user1@example.com, Password: password123');
