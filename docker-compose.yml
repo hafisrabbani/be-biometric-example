@@ -6,7 +6,7 @@ services:
     container_name: biometric_backend
     restart: always
     ports:
-      - 3050:3050
+      - 3050
     networks:
       - internal_network_dev
 
