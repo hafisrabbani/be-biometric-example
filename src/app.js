@@ -166,7 +166,7 @@ app.get('/', (req, res) => {
     res.json({ message: 'API is running' });
 });
 
-const PORT = process.env.PORT || 3500;
+const PORT = 3050;
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server berjalan di port ${PORT}`);
     console.log('\nDummy users:');
